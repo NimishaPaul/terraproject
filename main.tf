@@ -88,7 +88,7 @@ resource "tls_private_key" "tls" {
 }
 
 resource "aws_key_pair" "aws_key" {
-  key_name   = "new"
+  key_name   = "web001"
   public_key = tls_private_key.tls.public_key_openssh
 }
 
